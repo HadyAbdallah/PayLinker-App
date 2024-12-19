@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:paylinker/Features/cheakout/presentation/views/my_cart_viwe.dart';
 
 void main() {
   runApp(const PayLinker());
@@ -11,7 +12,7 @@ class PayLinker extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      home: MyCartViwe(),
     );
   }
 }
