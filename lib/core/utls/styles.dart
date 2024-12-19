@@ -33,7 +33,7 @@ abstract class Styles {
     color: Colors.black.withOpacity(0.8),
     fontSize: 20,
     fontFamily: "Inter",
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w400,
     height: 0,
   );
 }

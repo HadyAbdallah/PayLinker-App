@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:paylinker/Features/cheakout/presentation/views/widgets/my_cart_view_body.dart';
 import 'package:paylinker/core/utls/styles.dart';
 
 class MyCartViwe extends StatelessWidget {
@@ -21,6 +22,7 @@ class MyCartViwe extends StatelessWidget {
           style: Styles.style25,
         ),
       ),
+      body: MyCartViewBody(),
     );
   }
 }
