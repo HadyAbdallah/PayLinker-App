@@ -1,6 +1,6 @@
 {
-    "name": "pay_linker",
-    "short_name": "pay_linker",
+    "name": "paylinker",
+    "short_name": "paylinker",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

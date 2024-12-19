@@ -1,4 +1,4 @@
-package com.example.pay_linker
+package com.example.paylinker
 
 import io.flutter.embedding.android.FlutterActivity
 
