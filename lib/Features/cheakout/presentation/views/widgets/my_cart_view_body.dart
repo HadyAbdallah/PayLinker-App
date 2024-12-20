@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:paylinker/Features/cheakout/presentation/views/widgets/order_info_item.dart';
 import 'package:paylinker/Features/cheakout/presentation/views/widgets/total_price_widget.dart';
+import 'package:paylinker/core/widgets/custom_button.dart';
 
 class MyCartViewBody extends StatelessWidget {
   const MyCartViewBody({super.key});
@@ -32,7 +33,11 @@ class MyCartViewBody extends StatelessWidget {
             height: 34,
             color: Color(0xffC7C7C7),
           ),
-          TotalPriceWidget(title: 'Total', value: r'$50.97')
+          TotalPriceWidget(title: 'Total', value: r'$50.97'),
+          SizedBox(
+            height: 16,
+          ),
+          CustomButton(text: 'Complete Payment')
         ],
       ),
     );
