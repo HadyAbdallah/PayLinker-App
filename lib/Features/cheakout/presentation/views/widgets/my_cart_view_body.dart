@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:paylinker/Features/cheakout/presentation/views/payment_details_view.dart';
 import 'package:paylinker/Features/cheakout/presentation/views/widgets/order_info_item.dart';
 import 'package:paylinker/Features/cheakout/presentation/views/widgets/total_price_widget.dart';
 import 'package:paylinker/core/widgets/custom_button.dart';
@@ -11,8 +12,9 @@ class MyCartViewBody extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset("assets/images/basket_image.png"),
+          Expanded(child: Image.asset("assets/images/basket_image.png")),
           SizedBox(
             height: 25,
           ),
@@ -37,7 +39,14 @@ class MyCartViewBody extends StatelessWidget {
           SizedBox(
             height: 16,
           ),
-          CustomButton(text: 'Complete Payment')
+          CustomButton(
+              text: 'Complete Payment',
+              onTap: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return const PaymentDetailsView();
+                }));
+              })
         ],
       ),
     );

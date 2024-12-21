@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:paylinker/Features/cheakout/presentation/views/my_cart_viwe.dart';
+import 'package:paylinker/Features/cheakout/presentation/views/my_cart_view.dart';
 
 void main() {
   runApp(const PayLinker());
